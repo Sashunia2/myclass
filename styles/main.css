@@ -1,0 +1,88 @@
+body{
+    text-align: center;
+    background-color: white;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+}
+
+
+.students{
+    margin: 20px auto;
+    width: 300px; 
+    background-color: #2ffce0;
+    margin: 20px auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 1.5s all;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+  
+
+
+h2 {
+    color: rgb(253, 253, 253);
+}
+
+.students img{
+    width: 300px;
+    border-radius: 30px;
+}
+
+.students:hover {
+    opacity: 0,2;
+    background-color: rgb(0, 162, 255);
+    
+}
+.students:active {
+    padding-left: 300px;
+}
+.students::target-text {
+    text-align:  left ;
+    text-align: 20px;
+    text-align: auto;
+
+}
+
+ 
+.box {
+    position: relative;
+    color: #fff;
+    border-radius: 3px;
+}
+ 
+.box::before,
+.box::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    top: -15px;
+    left: -15px;
+    border-radius: 8px;
+    background: linear-gradient(45deg,
+        #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+        #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff
+    );
+    background-size: 300%;
+    animation: border 12s linear infinite;
+}
+ 
+.box::after {
+    filter: blur(50px);
+}
+ 
+@keyframes border {
+    0%, 100% {
+        background-position: 0 0;
+    }
+ 
+    50% {
+        background-position: 300%;
+    }
+}
